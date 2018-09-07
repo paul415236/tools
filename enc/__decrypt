@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo "__encrypt <in>"
+    exit 1
+fi
+
+output=`echo $1 | sed 's/\.enc//g'`
+
+openssl enc -in $1 \
+	-d -aes-256-cbc \
+	-pass stdin > $output
