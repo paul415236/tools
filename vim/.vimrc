@@ -1,5 +1,3 @@
-" Chewei.Lin <chewei.lin@vivotek.com>
-
 syntax on
 
 " status
