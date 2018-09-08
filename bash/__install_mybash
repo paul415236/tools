@@ -1,0 +1,24 @@
+#!/bin/bash
+
+PWD=`pwd`
+USER=`whoami`
+FILE=/home/$USER/.bashrc
+
+if [ ! -f $FILE ]; then
+	touch $FILE
+fi
+
+check_add()
+{
+	grep "$1" $FILE > /dev/null
+	if [ $? -ne 0 ]; then
+		echo "add $2"
+		echo $2 >> $FILE
+	fi
+}
+
+check_add "alias vi=" "alias vi='vim'"
+check_add "alias g=" "alias g='grep -rni'"
+check_add "alias f=" "alias f='find . -iname'"
+check_add "alias ctags=" "alias ctags='ctags --sort=foldcase -R .'"
+source $FILE
