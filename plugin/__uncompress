@@ -1,0 +1,77 @@
+#!/bin/bash
+#Paul.Lin <paul415236@gmail.com>
+
+_FILE=`echo $1 | sed 's/.*\///g'`
+_FMT=`echo $_FILE | sed 's/.*\.//g'`
+
+#echo "File: $_FILE"
+#echo "Format: $_FMT"
+
+if [ ! -f $_FILE ]; then
+    echo "file is not exist"
+    exit
+fi
+
+_tar_gz()
+{
+    tar zxvf $_FILE
+}
+
+_tar_bz2()
+{
+    tar jxvf $_FILE
+}
+
+_rar()
+{
+    unrar $_FILE
+}
+
+_gz()
+{
+    gunzip $_FILE
+}
+
+_tar()
+{
+    tar xvf $_FILE
+}
+
+_Z()
+{
+    uncompress $_FILE
+}
+
+_7z()
+{
+    7z $_FILE
+}
+
+case $_FMT in
+    tar)
+        _tar
+    ;;
+    tgz)
+        _tar_gz
+    ;;
+    bz2)
+        _tar_bz2
+    ;;
+    rar)
+        _rar
+    ;;
+    gz)
+        _gz
+    ;;
+    Z)
+        _Z
+    ;;
+    7z)
+        _7z
+    ;;
+    *)
+        echo "unable to recognize format"
+        exit 1
+    ;;
+esac
+
