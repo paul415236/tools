@@ -28,6 +28,11 @@ endfunction
 nmap <F2> :call ToggleMouse()<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
 " window
+nmap <silent> <A-Up> :wincmd k<CR>
+nmap <silent> <A-Down> :wincmd j<CR>
+nmap <silent> <A-Left> :wincmd h<CR>
+nmap <silent> <A-Right> :wincmd l<CR>
+
 nmap + <C-W>+
 nmap - <C-W>-
 nmap > <C-w>>
@@ -93,7 +98,7 @@ set ut=10
 " source explorer
 nmap <F9> :SrcExplToggle<CR>
 " // Set the height of Source Explorer window 
-let g:SrcExpl_winHeight = 8 
+let g:SrcExpl_winHeight = 12
 " // Set 100 ms for refreshing the Source Explorer 
 let g:SrcExpl_refreshTime = 100 
 " // Set "Enter" key to jump into the exact definition context 
