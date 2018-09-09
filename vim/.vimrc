@@ -6,8 +6,10 @@ syntax on
 colorscheme desert
 "colorscheme torte
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
-" system
-":set hlsearch
+" high light search result
+:set hlsearch
+hi Search ctermbg=Grey
+hi Search ctermfg=Red
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
 " mouse
 "nmap <F3> :set mouse=a<CR>
@@ -58,6 +60,13 @@ function! ToggleTab()
     let g:tabState=g:tabState-1
 endfunction
 nmap <F1> :call ToggleTab()<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" shift indentation
+nmap <F3> V<
+nmap <F4> V>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" jump to variable definition
+"nmap 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
 " auto tab/space conversion
 autocmd FileType make setlocal shiftwidth=4 tabstop=4 softtabstop=4 noexpandtab
