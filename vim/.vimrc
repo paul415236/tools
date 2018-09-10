@@ -39,6 +39,9 @@ nmap + <C-W>+
 nmap - <C-W>-
 nmap > <C-w>>
 nmap < <C-w><
+
+:set fillchars=vert:\|
+:set fillchars=stl:=
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
 " tab
 :set tabstop=4
