@@ -39,7 +39,7 @@ function! ToggleMouse()
         echo "disable mouse"
     endif
 
-    let g:mouseState=g:mouseState-1
+    let g:mouseState=!g:mouseState
 endfunction
 nmap <F2> :call ToggleMouse()<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
@@ -74,7 +74,7 @@ function! ToggleTab()
         echo "expandtab"
     endif
 	
-    let g:tabState=g:tabState-1
+    let g:tabState=!g:tabState
 endfunction
 nmap <F1> :call ToggleTab()<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
