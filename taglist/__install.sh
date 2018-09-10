@@ -10,4 +10,4 @@ cp -f ./plugin/taglist.vim /home/$USER/.vim/plugin/
 if [ ! -d /home/$USER/.vim/doc ]; then
 	mkdir -p /home/$USER/.vim/doc
 fi
-cp -f ./doc/taglist.vim /home/$USER/.vim/doc/
+cp -f ./doc/taglist.txt /home/$USER/.vim/doc/
