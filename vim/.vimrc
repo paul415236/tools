@@ -3,13 +3,27 @@
 syntax on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
 " scheme
+"colorscheme evening
 colorscheme desert
 "colorscheme torte
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
 " high light search result
 :set hlsearch
-hi Search ctermbg=Grey
-hi Search ctermfg=Red
+hi Search ctermbg=LightGreen
+hi Search ctermfg=DarkRed
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
+" some color
+highlight DiffAdd           cterm=bold ctermbg=none ctermfg=119
+highlight DiffDelete        cterm=bold ctermbg=none ctermfg=167
+highlight DiffChange        cterm=bold ctermbg=none ctermfg=227
+highlight SignifySignAdd    cterm=bold ctermbg=237  ctermfg=119
+highlight SignifySignDelete cterm=bold ctermbg=237  ctermfg=167
+highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
+" Set cursor
+:set cursorline
+hi cursorLine cterm=NONE ctermbg=NONE ctermfg=NONE
+hi cursorLineNR cterm=NONE ctermbg=234 ctermfg=15
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
 " mouse
 "nmap <F3> :set mouse=a<CR>
@@ -41,7 +55,7 @@ nmap > <C-w>>
 nmap < <C-w><
 
 :set fillchars=vert:\|
-:set fillchars=stl:=
+":set fillchars=stl:=
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
 " tab
 :set tabstop=4
