@@ -1,0 +1,91 @@
+libcoregrind_arm_linux_a-m_clientstate.o: m_clientstate.c \
+ /usr/include/stdc-predef.h pub_core_basics.h \
+ ../include/pub_tool_basics.h ../VEX/pub/libvex_basictypes.h \
+ /usr/lib/gcc/arm-linux-gnueabihf/6/include/stdarg.h \
+ pub_core_threadstate.h ../include/pub_tool_threadstate.h \
+ ../include/pub_tool_basics.h pub_core_libcsetjmp.h \
+ ../include/pub_tool_libcsetjmp.h /usr/include/setjmp.h \
+ /usr/include/features.h /usr/include/arm-linux-gnueabihf/sys/cdefs.h \
+ /usr/include/arm-linux-gnueabihf/bits/wordsize.h \
+ /usr/include/arm-linux-gnueabihf/gnu/stubs.h \
+ /usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h \
+ /usr/include/arm-linux-gnueabihf/bits/setjmp.h \
+ /usr/include/arm-linux-gnueabihf/bits/sigset.h pub_core_vki.h \
+ ../include/pub_tool_vki.h ../include/vki/vki-linux.h \
+ ../include/vki/vki-posixtypes-arm-linux.h ../include/vki/vki-arm-linux.h \
+ ../include/vki/vki-linux-drm.h pub_core_guest.h \
+ ../include/pub_tool_guest.h ../VEX/pub/libvex_guest_arm.h \
+ ../VEX/pub/libvex_basictypes.h ../VEX/pub/libvex.h \
+ ../VEX/pub/libvex_ir.h pub_core_xarray.h ../include/pub_tool_xarray.h \
+ pub_core_clientstate.h ../include/pub_tool_clientstate.h \
+ ../include/pub_tool_xarray.h
+
+/usr/include/stdc-predef.h:
+
+pub_core_basics.h:
+
+../include/pub_tool_basics.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+/usr/lib/gcc/arm-linux-gnueabihf/6/include/stdarg.h:
+
+pub_core_threadstate.h:
+
+../include/pub_tool_threadstate.h:
+
+../include/pub_tool_basics.h:
+
+pub_core_libcsetjmp.h:
+
+../include/pub_tool_libcsetjmp.h:
+
+/usr/include/setjmp.h:
+
+/usr/include/features.h:
+
+/usr/include/arm-linux-gnueabihf/sys/cdefs.h:
+
+/usr/include/arm-linux-gnueabihf/bits/wordsize.h:
+
+/usr/include/arm-linux-gnueabihf/gnu/stubs.h:
+
+/usr/include/arm-linux-gnueabihf/gnu/stubs-hard.h:
+
+/usr/include/arm-linux-gnueabihf/bits/setjmp.h:
+
+/usr/include/arm-linux-gnueabihf/bits/sigset.h:
+
+pub_core_vki.h:
+
+../include/pub_tool_vki.h:
+
+../include/vki/vki-linux.h:
+
+../include/vki/vki-posixtypes-arm-linux.h:
+
+../include/vki/vki-arm-linux.h:
+
+../include/vki/vki-linux-drm.h:
+
+pub_core_guest.h:
+
+../include/pub_tool_guest.h:
+
+../VEX/pub/libvex_guest_arm.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+../VEX/pub/libvex.h:
+
+../VEX/pub/libvex_ir.h:
+
+pub_core_xarray.h:
+
+../include/pub_tool_xarray.h:
+
+pub_core_clientstate.h:
+
+../include/pub_tool_clientstate.h:
+
+../include/pub_tool_xarray.h:
