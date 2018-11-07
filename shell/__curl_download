@@ -1,0 +1,18 @@
+#!/bin/bash
+# Paul <paul415236@gmail.com>
+
+read -p "basic or digest: " auth
+read -p "server address: " ip
+read -p "server account: " account
+read -p "account's password: " passwd
+read -p "server port: " port
+read -p "file: " file
+
+if [ "${auth}" = "digest" ]; then
+    args="${args} --digest"
+fi
+
+curl -v -u ${account}:${passwd} \
+    ${args} \
+    ftp://${ip}:${port}/${file} \
+    -o ${file}
