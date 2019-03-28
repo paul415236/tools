@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# File: __grep_except
+# Author: Chewei.Lin
+
+BLACK=30
+RED=31
+GREEN=32
+YELLOW=33
+BLUE=34
+PURPLE=35
+CYAN=36
+WHITE=37
+
+export GREP_COLOR=${YELLOW}
+
+LC_ALL=C grep -Frn $@ . --color \
+    --exclude='.svn' --exclude='tags' # Kick out
