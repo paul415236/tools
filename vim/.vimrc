@@ -16,7 +16,7 @@ if version > 580
 endif
 
 set t_Co=256
-let g:colors_name = "fisa"
+let g:colors_name = "wombat256mod"
 
 "hi IncSearch -- no settings --
 "hi WildMenu -- no settings --
@@ -345,3 +345,5 @@ function! ToggleListState()
     let g:list_state=!g:list_state
 endfunction
 nmap <F5> :call ToggleListState()<CR>
+
+:syntax on
