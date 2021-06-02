@@ -327,4 +327,22 @@ hi User2 ctermfg=007 ctermbg=236 guibg=#303030 guifg=#adadad
 hi User3 ctermfg=236 ctermbg=236 guibg=#303030 guifg=#303030
 hi User4 ctermfg=239 ctermbg=239 guibg=#4e4e4e guifg=#4e4e4e
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
-
+:nnoremap <C-]> <C-r>
+:nnoremap <C-S> :w<cr>
+:nnoremap <C-Q> :q<cr>
+:nnoremap <C-D> :wq!<cr>
+:nnoremap <leader>\ :vsp<cr>
+:nnoremap <leader>- :sp<cr>
+:set list
+:set lcs=tab:\|\  " the last character is space!
+let g:list_state=0
+function! ToggleListState()
+    if g:list_state
+        set list
+        set lcs=tab:\|\  " the last character is space!
+    else
+        set nolist
+    endif
+    let g:list_state=!g:list_state
+endfunction
+nmap <F5> :call ToggleListState()<CR>
