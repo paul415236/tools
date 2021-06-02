@@ -135,7 +135,7 @@ hi doxygensmallspecial guifg=#fdd090 guibg=NONE guisp=NONE gui=NONE ctermfg=222 
 " Manually added:
 hi ColorColumn guibg=#3e3e5e ctermbg=237
 
-colorscheme desert
+"colorscheme desert
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
 " high light search result
 :set hlsearch
