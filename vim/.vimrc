@@ -194,16 +194,15 @@ nmap < <C-w><
 "nmap <F1> :set noexpandtab<CR><CR>
 "nmap <F2> :set expandtab<CR><CR>
 
-let g:tabState=1
+let g:tabState=0
 function! ToggleTab()
     if g:tabState
-        set noexpandtab
-        echo "noexpandtab"
-    else
         set expandtab
         echo "expandtab"
+    else
+        set noexpandtab
+        echo "noexpandtab"
     endif
-	
     let g:tabState=!g:tabState
 endfunction
 nmap <F1> :call ToggleTab()<CR>
@@ -327,7 +326,7 @@ hi User2 ctermfg=007 ctermbg=236 guibg=#303030 guifg=#adadad
 hi User3 ctermfg=236 ctermbg=236 guibg=#303030 guifg=#303030
 hi User4 ctermfg=239 ctermbg=239 guibg=#4e4e4e guifg=#4e4e4e
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
-:nnoremap <C-]> <C-r>
+":nnoremap <C-]> 
 :nnoremap <C-S> :w<cr>
 :nnoremap <C-Q> :q<cr>
 :nnoremap <C-D> :wq!<cr>
