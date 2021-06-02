@@ -16,7 +16,8 @@ if version > 580
 endif
 
 set t_Co=256
-let g:colors_name = "wombat256mod"
+"let g:colors_name = "wombat256mod"
+let g:colors_name = "wombat256"
 
 "hi IncSearch -- no settings --
 "hi WildMenu -- no settings --
@@ -332,6 +333,8 @@ hi User4 ctermfg=239 ctermbg=239 guibg=#4e4e4e guifg=#4e4e4e
 :nnoremap <C-D> :wq!<cr>
 :nnoremap <leader>\ :vsp<cr>
 :nnoremap <leader>- :sp<cr>
+
+" show tab
 :set list
 :set lcs=tab:\|\  " the last character is space!
 let g:list_state=0
@@ -346,4 +349,9 @@ function! ToggleListState()
 endfunction
 nmap <F5> :call ToggleListState()<CR>
 
+" syntax on
 :syntax on
+
+" auto-ident
+:set autoindent
+:set cindent
