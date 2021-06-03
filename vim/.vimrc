@@ -349,6 +349,19 @@ function! ToggleListState()
 endfunction
 nmap <F5> :call ToggleListState()<CR>
 
+" line numbers
+:set number
+let g:linenumber_state=0
+function! ToggleLineNumberState()
+    if g:linenumber_state
+        set number
+    else
+        set nonumber
+    endif
+    let g:linenumber_state=!g:linenumber_state
+endfunction
+nmap <F6> :call ToggleLineNumberState()<CR>
+
 " syntax on
 :syntax on
 
