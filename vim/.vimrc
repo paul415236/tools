@@ -1,6 +1,5 @@
 "Author: Paul.Lin <paul415236@gmail.com>
 
-syntax on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""'
 " scheme
 "colorscheme evening
@@ -374,3 +373,9 @@ nmap <silent> <C-Up> :wincmd k<CR>
 nmap <silent> <C-Down> :wincmd j<CR>
 nmap <silent> <C-Left> :wincmd h<CR>
 nmap <silent> <C-Right> :wincmd l<CR>
+
+" search (*) but do not jump
+nnoremap * *``
+
+" find world
+:nmap <C-f>s :cs find s <C-R>=expand("<cword>")<CR><CR>
